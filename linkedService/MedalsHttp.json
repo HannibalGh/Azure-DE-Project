@@ -1,0 +1,12 @@
+{
+	"name": "MedalsHttp",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/raw/main/data/Medals.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

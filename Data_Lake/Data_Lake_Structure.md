@@ -31,9 +31,3 @@ This document describes the structure of the data lake used in the project. The 
   - **_committed_1636913761093654077**: Indicates a committed part of the data transformation.
   - **_SUCCESS**: A file indicating that the transformation process for this data set was successful.
   - **part-00000-tid-1636913761093654077-ca8b0053-78f6-46c7-a508-6bb78f91479f-37-1-c000.csv**: The resulting CSV file after transformation, containing processed data ready for analysis.
-
-## Notes
-- Ensure that the transformed data files follow a consistent naming convention to facilitate easy tracking and management.
-- The `_SUCCESS` file is used to verify that the data transformation was completed successfully.
-
-For further details on how the data is processed and used, refer to the related documentation and code files in this repository.

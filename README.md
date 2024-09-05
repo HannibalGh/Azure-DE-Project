@@ -1,63 +1,65 @@
-# Tokyo Olympics 2020 Data Analysis Project
+# Project Overview
 
-## Overview
-This project analyzes data from the Tokyo Olympics 2020, focusing on athlete performance, medal distribution, and gender representation. The analysis is performed using Azure Data Factory (ADF) for ETL processes and Power BI for data visualization.
+This project involves analyzing Tokyo Olympics 2020 data using Azure services and Power BI. The project includes data extraction, transformation, and visualization components. Below is an overview of the project's structure and key components.
 
-## Project Structure
+## Folder Structure
 
-- **/ADF**: Contains Azure Data Factory configurations.
-  - **pipelines/**: JSON files defining ADF pipelines.
-  - **linked_services/**: JSON files for linked services.
-  - **datasets/**: JSON files for datasets.
-  - **triggers/**: JSON files for triggers.
-  - **ADF_Documentation.md**: Documentation on ADF pipelines, linked services, datasets, and triggers.
+- **/Power_BI/reports/**: Contains Power BI report files in `.pbix` format.
+- **/ADF/**: Contains Azure Data Factory (ADF) configuration files.
+  - **pipelines/**: JSON files for defining ADF pipelines.
+  - **linked_services/**: JSON files for connecting to data sources and sinks.
+  - **datasets/**: JSON files for defining data structures.
+  - **triggers/**: JSON files for automating pipeline execution.
+  - **ADF_Documentation.md**: Documentation for ADF, including pipeline descriptions, setup instructions, and other relevant details.
+- **/Synapse_Analytics/**: Contains Synapse Analytics configurations and documentation.
+  - **Database_Schemas/**: Includes CSV files with database schemas.
+  - **Scripts/Queries/**: Contains SQL query files used for data analysis.
+  - **Synapse_Analytics_Documentation.md**: Documentation for Synapse Analytics, including details on SQL queries, table schemas, and setup instructions.
+- **/Data_Lake/**: Contains raw and sample data used for the project.
+  - **sample data/**: Includes sample datasets for demonstration purposes.
+- **/Databricks/**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
+- **README.md**: Main documentation file for the project.
 
-- **/Power_BI**: Contains Power BI report files and related documentation.
-  - **reports/**: Power BI report files in `.pbix` format.
-  - **Power_BI_Documentation.md**: Instructions on opening and using Power BI reports.
+## Data Lake
 
-- **/Synapse_Analytics**: Contains Synapse Analytics SQL queries and database schema documentation.
-  - **Scripts/Queries/**: SQL queries for data analysis.
-  - **Database_Schemas/**: Database schema documentation for Synapse Analytics tables.
-  - **Synapse_Documentation.md**: Documentation on Synapse Analytics setup, queries, and data sources.
+The Data Lake component of the project stores raw and processed data used for analytics. The key folder in this repository is:
 
-## Data Sources
+- **Folder: `sample data`**
+  - **Description**: Contains sample datasets used for demonstrating the ETL process and data analysis. This folder serves as a reference for the types of data being handled.
 
-- **Data Source**: Synapse Data Lake database named `TokyoOlympicsDB`.
-- **External Data Source**: [External Data Source](https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/tree/main/data)
+## Databricks
 
-## Setup Instructions
+The Databricks component is used for advanced data processing and transformation. Details of the Databricks setup and any related notebooks will be provided in the Databricks folder.
 
-### Azure Data Factory (ADF)
-1. Configure the ADF pipelines using the JSON files in `/ADF/pipelines/`.
-2. Set up linked services and datasets using the JSON files in `/ADF/linked_services/` and `/ADF/datasets/`.
-3. Refer to the `ADF_Documentation.md` for detailed setup instructions.
+## Azure Data Factory (ADF)
 
-### Power BI
-1. Download the `.pbix` file from `/Power_BI/reports/`.
-2. Open the file in Power BI Desktop as described in `Power_BI_Documentation.md`.
-3. Interact with the report and visualizations.
+- **Data Factory Name**: `tokyo-olympic-han`
+- **Pipeline**: `Load_Olympic_Data`
+  - **Purpose**: Extracts data from an external source and loads it into the data lake. Data was not transformed during this step.
+  - **Source**: [External Data Source](https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/tree/main/data)
+  - **Sink**: Data Lake Gen 2 `olympicsdatahan`, folder `raw-data`
+  - **Output Files**: CSV files for `Athletes`, `Coaches`, `EntriesGender`, `Medals`, `Teams`
+  - **Triggers**: None; the pipeline was executed manually.
 
-### Synapse Analytics
-1. Use the SQL queries from `/Synapse_Analytics/Scripts/Queries/` to analyze data.
-2. Refer to `Synapse_Documentation.md` for details on table schemas and data sources.
+## Power BI
 
-## Data Visualizations
-The Power BI report includes various visuals such as:
-- Cards for key metrics (e.g., number of disciplines, countries, and athletes).
-- Charts for medal counts, distribution by discipline, and gender distribution.
+The Power BI reports visualize key metrics related to athletes, medals, and gender distribution across different countries and disciplines. The report is located in the `/Power_BI/reports/` folder and is saved as `Tokyo_Olympics_Report.pbix`.
 
-## Notes
-- The Azure Data Factory and resources may be deleted as part of project closure. Please refer to the project documentation for any final data extraction or validation.
+### How to Open the Report
+1. **Download the Report**: Download the `.pbix` file from the `/Power_BI/reports/` folder.
+2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
+3. **Open the File**: In Power BI, go to **File > Open** and navigate to the downloaded `.pbix` file.
+4. **Interact with the Report**: Once the file is opened, you can interact with the various visuals and analyze the data.
 
-## Additional Resources
-- [Azure Data Factory Documentation](https://docs.microsoft.com/en-us/azure/data-factory/)
-- [Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/)
-- [Azure Synapse Analytics Documentation](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
+## Synapse Analytics
 
-## License
-Specify the license for your project if applicable.
+Synapse Analytics is used for querying and analyzing the Olympic data. The SQL queries and table schemas are documented in the `/Synapse_Analytics/` folder.
 
-## Contact
-Provide contact information if users have questions or need support.
+### Synapse Analytics Documentation
+- **Path**: `/Synapse_Analytics/Synapse_Analytics_Documentation.md`
+- **Contents**: Details on SQL queries, table schemas, and how to use Synapse Analytics for data analysis.
+
+## Conclusion
+
+This project demonstrates a comprehensive approach to analyzing Olympic data using Azure services and Power BI. The provided documentation covers the setup and usage of each component involved in the ETL process and data visualization.
 

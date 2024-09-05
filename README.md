@@ -3,7 +3,7 @@
 This project involves analyzing Tokyo Olympics 2020 data using Azure services and Power BI. The project includes data extraction, transformation, and visualization components. Below is an overview of the project's structure and key components.
 
 ## Architecture
-![Project Architecture] (https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Architecture%20Diagram.png)
+![Project Architecture](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Architecture%20Diagram.png)
 
 ## Folder Structure
 

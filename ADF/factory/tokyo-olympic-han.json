@@ -1,0 +1,9 @@
+{
+	"name": "tokyo-olympic-han",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c56a038-8a13-42a8-9a79-05f0ac60138b",
+		"tenantId": "1c53d9a0-7b90-4171-aee8-5d97896e4842"
+	}
+}

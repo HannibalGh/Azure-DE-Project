@@ -12,6 +12,9 @@ This documentation provides an overview of the Power BI report for the Tokyo Oly
 
 - **Reports Folder**: The Power BI report is saved in `.pbix` format and can be accessed [here](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Power_BI/reports/Tokyo_Olympics_Report).
 
+- **Path**: `/Power_BI/reports/`
+- **Report Name**: `Tokyo_Olympics_Report.pbix`
+
 ## Report Layout and Visuals
 
 ### Top Cards

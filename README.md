@@ -35,6 +35,8 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **reports/**: Power BI report files in `.pbix` format.
   - **Power_BI_Documentation.md**: Documentation for Power BI, including report layout, visuals, and instructions on how to open the report.
 
+## Additional information on Tech used
+
 ## Azure Data Factory (ADF)
 
 - **Data Factory Name**: `tokyo-olympic-han`

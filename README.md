@@ -1,38 +1,39 @@
-# Project Overview
+# Azure Data Engineering Project | Tokyo Olympic Data Analytics
 
-This project involves analyzing Tokyo Olympics 2020 data using Azure services and Power BI. The project includes data extraction, transformation, and visualization components. Below is an overview of the project's structure and key components.
+## Project Overview
+This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI. The project includes data extraction, transformation, and visualization components. Below is an overview of the project's structure and key components.
 
 ## Architecture
 ![Project Architecture](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Architecture%20Diagram.png)
 
+## Technologies Used
+1. Programming languages - Python, Pyspark, Databricks Magic Command
+2. Scripting languages - SQL
+3. Microsoft Azure Platform
+   - Azure Data Factory
+   - Azure Data Lake Storage
+   - Databricks
+   - Azure Synapse Analytics
+4. Microsoft Power BI
+
 ## Folder Structure
 
-- **/Power_BI/reports/**: Contains Power BI report files in `.pbix` format.
 - **/ADF/**: Contains Azure Data Factory (ADF) configuration files.
   - **pipelines/**: JSON files for defining ADF pipelines.
   - **linked_services/**: JSON files for connecting to data sources and sinks.
   - **datasets/**: JSON files for defining data structures.
   - **triggers/**: JSON files for automating pipeline execution.
   - **ADF_Documentation.md**: Documentation for ADF, including pipeline descriptions, setup instructions, and other relevant details.
+- **/Data_Lake/**: Contains raw and sample data used for the project.
+  - **sample data/**: Includes sample datasets for demonstration purposes.
+- **/Databricks/**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
 - **/Synapse_Analytics/**: Contains Synapse Analytics configurations and documentation.
   - **Database_Schemas/**: Includes CSV files with database schemas.
   - **Scripts/Queries/**: Contains SQL query files used for data analysis.
   - **Synapse_Analytics_Documentation.md**: Documentation for Synapse Analytics, including details on SQL queries, table schemas, and setup instructions.
-- **/Data_Lake/**: Contains raw and sample data used for the project.
-  - **sample data/**: Includes sample datasets for demonstration purposes.
-- **/Databricks/**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
-- **README.md**: Main documentation file for the project.
-
-## Data Lake
-
-The Data Lake component of the project stores raw and processed data used for analytics. The key folder in this repository is:
-
-- **Folder: `sample data`**
-  - **Description**: Contains sample datasets used for demonstrating the ETL process and data analysis. This folder serves as a reference for the types of data being handled.
-
-## Databricks
-
-The Databricks component is used for advanced data processing and transformation. Details of the Databricks setup and any related notebooks will be provided in the Databricks folder.
+- **/Power_BI/**: Contains Power BI report files and related documentation.
+  - **reports/**: Power BI report files in `.pbix` format.
+  - **Power_BI_Documentation.md**: Documentation for Power BI, including report layout, visuals, and instructions on how to open the report.
 
 ## Azure Data Factory (ADF)
 
@@ -42,27 +43,43 @@ The Databricks component is used for advanced data processing and transformation
   - **Source**: [External Data Source](https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/tree/main/data)
   - **Sink**: Data Lake Gen 2 `olympicsdatahan`, folder `raw-data`
   - **Output Files**: CSV files for `Athletes`, `Coaches`, `EntriesGender`, `Medals`, `Teams`
-  - **Triggers**: None; the pipeline was executed manually.
+  - **Triggers**: The pipeline was executed manually without a trigger.
 
-## Power BI
+## Data Lake
 
-The Power BI reports visualize key metrics related to athletes, medals, and gender distribution across different countries and disciplines. The report is located in the `/Power_BI/reports/` folder and is saved as `Tokyo_Olympics_Report.pbix`.
+The Data Lake component stores raw and processed data used for analytics. Key folder:
 
-### How to Open the Report
-1. **Download the Report**: Download the `.pbix` file from the `/Power_BI/reports/` folder.
-2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
-3. **Open the File**: In Power BI, go to **File > Open** and navigate to the downloaded `.pbix` file.
-4. **Interact with the Report**: Once the file is opened, you can interact with the various visuals and analyze the data.
+- **Folder: `sample data`**
+  - **Description**: Contains sample datasets for demonstrating the ETL process and data analysis. This folder serves as a reference for the types of data being handled.
+
+## Databricks
+
+The Databricks component is used for advanced data processing and transformation. Details of the Databricks setup and any related notebooks will be provided in the Databricks folder.
 
 ## Synapse Analytics
 
-Synapse Analytics is used for querying and analyzing the Olympic data. The SQL queries and table schemas are documented in the `/Synapse_Analytics/` folder.
+- **Data Source**: The report uses the Synapse Data Lake database named `TokyoOlympicsDB` for data. This database was used to import and analyze data in Power BI.
+- **Scripts/Queries**: SQL query files used for data analysis are stored in the Synapse_Analytics/Scripts/Queries folder.
 
-### Synapse Analytics Documentation
-- **Path**: `/Synapse_Analytics/Synapse_Analytics_Documentation.md`
-- **Contents**: Details on SQL queries, table schemas, and how to use Synapse Analytics for data analysis.
+## Power BI
+
+- **Dashboard**: The project includes a single Power BI dashboard.
+- **Visuals**: 
+  - Cards displaying the number of disciplines, number of countries, and total number of athletes with breakdowns by gender.
+  - Stacked Bar Chart for medal counts by country.
+  - Pie Chart for medal distribution by discipline.
+  - Stacked Column Chart for top 10 countries by number of athletes.
+  - Clustered Column Chart for gender distribution of athletes by discipline.
+  - Stacked Column Chart for disciplines with female gold medals as a percentage of total athletes.
+
+## How to Open the Report
+
+To view the report:
+1. **Download the Report**: Download the `.pbix` file from the [reports folder](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Power_BI/reports/Tokyo_Olympics_Report.pbix).
+2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
+3. **Open the File**: In Power BI, go to **File > Open** and select the downloaded `.pbix` file.
+4. **Interact with the Report**: Once the file is opened, you can interact with the visuals and analyze the data.
 
 ## Conclusion
 
-This project demonstrates a comprehensive approach to analyzing Olympic data using Azure services and Power BI. The provided documentation covers the setup and usage of each component involved in the ETL process and data visualization.
-
+This project provides valuable insights into the Tokyo Olympics 2020 data through various Azure services and Power BI visualizations. The documentation includes details on ADF, Data Lake, Databricks, Synapse Analytics, and Power BI components used in the project.

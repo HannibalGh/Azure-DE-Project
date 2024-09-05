@@ -92,7 +92,7 @@ Power BI creates dashboards based on the SQL queries created in Synapse Analytic
   - Stacked Column Chart for top 10 countries by number of athletes.
   - Clustered Column Chart for gender distribution of athletes by discipline.
   - Stacked Column Chart for disciplines with female gold medals as a percentage of total athletes.
-
+     
 ## How to Open the Power BI Report
 
 To view the report:
@@ -100,6 +100,10 @@ To view the report:
 2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
 3. **Open the File**: In Power BI, go to **File > Open** and select the downloaded `.pbix` file.
 4. **Interact with the Report**: Once the file is opened, you can interact with the visuals and analyze the data.
+
+## Preview
+![Preview](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/PowerBi%20Dashboard%20%20preview.png)
+
 
 ******
 

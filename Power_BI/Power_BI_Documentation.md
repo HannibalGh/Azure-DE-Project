@@ -40,3 +40,16 @@ At the top of the report, there are interactive cards displaying the following k
 
 5. **Disciplines with Female Gold Medals as a Percentage of Total Athletes** (Stacked Column Chart)
    - Shows disciplines with the highest percentage of female gold medalists relative to the total number of athletes in that discipline.
+
+## How to Open the Report
+
+To view the report, follow these steps:
+
+1. **Download the Report**: Download the `.pbix` file from the GitHub repository [here](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Power_BI/reports/Tokyo_Olympics_Report).
+2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
+3. **Open the File**: In Power BI, go to **File > Open** and navigate to the downloaded `.pbix` file.
+4. **Interact with the Report**: Once the file is opened, you can interact with the various visuals and analyze the data.
+
+## Conclusion
+
+These queries provide valuable insights into the performance and participation of countries and athletes in the Tokyo Olympics. The SQL scripts are straightforward to run and can be easily integrated with Power BI for dynamic visualizations. The data source used is the Synapse Data Lake database `TokyoOlympicsDB`, which was created during the ETL process.

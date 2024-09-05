@@ -26,7 +26,7 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **triggers/**: JSON files for automating pipeline execution.
   - **ADF_Documentation.md**: Documentation for ADF, including pipeline descriptions, setup instructions, and other relevant details.
 - **[/Data_Lake/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Data_Lake)**: Contains raw data used for the project.
-  - **sample data/**: Includes raw dataset
+  - **sample data/**: Raw dataset ingested by ADF
 - **[/Databricks/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Databricks)**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
 - **[/Synapse_Analytics/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Synapse_Analytics)**: Contains Synapse Analytics configurations and documentation.
   - **Database_Schemas/**: Includes CSV files with database schemas.
@@ -76,7 +76,7 @@ The Databricks component is used for advanced data processing and transformation
 
 ## Microsoft Power BI
 
-- **Dashboard**: The project includes a single Power BI dashboard.
+- **Dashboard**: The project includes a single Power BI dashboard report.
 - **Visuals**: 
   - Cards displaying the number of disciplines, number of countries, and total number of athletes with breakdowns by gender.
   - Stacked Bar Chart for medal counts by country.
@@ -85,7 +85,7 @@ The Databricks component is used for advanced data processing and transformation
   - Clustered Column Chart for gender distribution of athletes by discipline.
   - Stacked Column Chart for disciplines with female gold medals as a percentage of total athletes.
 
-## How to Open the Report
+## How to Open the Power BI Report
 
 To view the report:
 1. **Download the Report**: Download the `.pbix` file from the [reports folder](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/Power_BI/reports/Tokyo_Olympics_Report.pbix).

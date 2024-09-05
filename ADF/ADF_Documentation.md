@@ -16,7 +16,7 @@ This documentation provides details on the Azure Data Factory (ADF) setup for th
 ### Factory Configuration
 The ADF factory is configured with the following JSON file:
 - **File Name**: `tokyo-olympic-han.json`
-- **File Location**: [https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/ADF/factory/tokyo-olympic-han.json)
+- **File Location**: [[tokyo-olympic-han.json](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/ADF/factory/tokyo-olympic-han.json)
 
 ## Pipeline Descriptions
 

@@ -1,5 +1,6 @@
 # Azure Data Engineering Project | Tokyo Olympic Data Analytics
 
+
 ## Project Overview
 This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI. The project includes data extraction, transformation, and visualization components. Below is an overview of the project's structure and key components.
 
@@ -24,7 +25,7 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **datasets/**: JSON files for defining data structures.
   - **triggers/**: JSON files for automating pipeline execution.
   - **ADF_Documentation.md**: Documentation for ADF, including pipeline descriptions, setup instructions, and other relevant details.
-- **[/Data_Lake/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Data_Lake)**: Contains raw and sample data used for the project.
+- **[/Data_Lake/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Data_Lake)**: Contains raw data used for the project.
   - **sample data/**: Includes raw dataset
 - **[/Databricks/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Databricks)**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
 - **[/Synapse_Analytics/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Synapse_Analytics)**: Contains Synapse Analytics configurations and documentation.
@@ -35,7 +36,9 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **reports/**: Power BI report files in `.pbix` format.
   - **Power_BI_Documentation.md**: Documentation for Power BI, including report layout, visuals, and instructions on how to open the report.
 
-## Additional information on Tech used
+******
+# Additional Information on Technologies Used
+******
 
 ## Azure Data Factory (ADF)
 
@@ -47,23 +50,31 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **Output Files**: CSV files for `Athletes`, `Coaches`, `EntriesGender`, `Medals`, `Teams`
   - **Triggers**: The pipeline was executed manually without a trigger.
 
-## Data Lake
+******
+
+## Azure Data Lake
 
 The Data Lake component stores raw and processed data used for analytics. Key folder:
 
 - **Folder: `sample data`**
   - **Description**: Contains raw dataset used during the ETL process and data analysis.
 
+******
+
 ## Databricks
 
 The Databricks component is used for advanced data processing and transformation. Details of the Databricks setup and any related notebooks will be provided in the Databricks folder.
 
-## Synapse Analytics
+******
+
+## Azure Synapse Analytics
 
 - **Data Source**: The report uses the Synapse Data Lake database named `TokyoOlympicsDB` for data. This database was used to import and analyze data in Power BI.
 - **Scripts/Queries**: SQL query files used for data analysis are stored in the Synapse_Analytics/Scripts/Queries folder.
 
-## Power BI
+******
+
+## Microsoft Power BI
 
 - **Dashboard**: The project includes a single Power BI dashboard.
 - **Visuals**: 

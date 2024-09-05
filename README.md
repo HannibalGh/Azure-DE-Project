@@ -14,24 +14,24 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
    - Azure Data Lake Storage
    - Databricks
    - Azure Synapse Analytics
-4. Microsoft Power BI
+4. Microsoft Power BI (data visualisation tool)
 
 ## Folder Structure
 
-- **/ADF/**: Contains Azure Data Factory (ADF) configuration files.
+- **[/ADF/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/ADF)**: Contains Azure Data Factory (ADF) configuration files.
   - **pipelines/**: JSON files for defining ADF pipelines.
   - **linked_services/**: JSON files for connecting to data sources and sinks.
   - **datasets/**: JSON files for defining data structures.
   - **triggers/**: JSON files for automating pipeline execution.
   - **ADF_Documentation.md**: Documentation for ADF, including pipeline descriptions, setup instructions, and other relevant details.
-- **/Data_Lake/**: Contains raw and sample data used for the project.
-  - **sample data/**: Includes sample datasets for demonstration purposes.
-- **/Databricks/**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
-- **/Synapse_Analytics/**: Contains Synapse Analytics configurations and documentation.
+- **[/Data_Lake/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Data_Lake)**: Contains raw and sample data used for the project.
+  - **sample data/**: Includes raw dataset
+- **[/Databricks/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Databricks)**: Contains Databricks notebooks and configurations for advanced data processing and transformation.
+- **[/Synapse_Analytics/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Synapse_Analytics)**: Contains Synapse Analytics configurations and documentation.
   - **Database_Schemas/**: Includes CSV files with database schemas.
   - **Scripts/Queries/**: Contains SQL query files used for data analysis.
   - **Synapse_Analytics_Documentation.md**: Documentation for Synapse Analytics, including details on SQL queries, table schemas, and setup instructions.
-- **/Power_BI/**: Contains Power BI report files and related documentation.
+- **[/Power_BI/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/Power_BI)**: Contains Power BI report files and related documentation.
   - **reports/**: Power BI report files in `.pbix` format.
   - **Power_BI_Documentation.md**: Documentation for Power BI, including report layout, visuals, and instructions on how to open the report.
 
@@ -50,7 +50,7 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
 The Data Lake component stores raw and processed data used for analytics. Key folder:
 
 - **Folder: `sample data`**
-  - **Description**: Contains sample datasets for demonstrating the ETL process and data analysis. This folder serves as a reference for the types of data being handled.
+  - **Description**: Contains raw dataset used during the ETL process and data analysis.
 
 ## Databricks
 

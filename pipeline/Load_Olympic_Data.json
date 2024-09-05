@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Load_Olympic_Data",
 	"properties": {
 		"activities": [
 			{

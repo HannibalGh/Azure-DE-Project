@@ -102,7 +102,7 @@ To view the report:
 4. **Interact with the Report**: Once the file is opened, you can interact with the visuals and analyze the data.
 
 ## Preview
-![Preview](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/PowerBi%20Dashboard%20%20preview.png)
+![Preview](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/PowerBi%20Dashboard%20preview.png)
 
 
 ******

@@ -7,16 +7,11 @@ This documentation provides details on the Azure Data Factory (ADF) setup for th
 - **pipelines/**: JSON files for defining ADF pipelines.
 - **linked_services/**: JSON files for connecting to data sources and sinks.
 - **datasets/**: JSON files for defining data structures.
-- **triggers/**: JSON files for automating pipeline execution (Note: No triggers folder in the current setup).
-- **factory/**: JSON file containing the ADF factory configuration.
+- **triggers/**: JSON files for automating pipeline execution. (Not used in this project)
 
 ## Data Factory
 - **Data Factory Name**: `tokyo-olympic-han`
-
-### Factory Configuration
-The ADF factory is configured with the following JSON file:
-- **File Name**: `tokyo-olympic-han.json`
-- **File Location**: [tokyo-olympic-han.json](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/ADF/factory/tokyo-olympic-han.json)
+- **Factory JSON File**: [tokyo-olympic-han.json](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/blob/main/factory/tokyo-olympic-han.json)
 
 ## Pipeline Descriptions
 
@@ -40,50 +35,50 @@ The ADF factory is configured with the following JSON file:
 - **Description**: Connects to Azure Data Lake Gen 2 where the raw Olympic data is stored.
 - **Connection Details**:
   - **Type**: Azure Data Lake Gen 2
-  - **Connection String**: [Connection string details]
 
 ## Datasets
 
 ### Dataset: `Athletes`
 - **Description**: Represents the dataset containing information about Olympic athletes.
 - **Schema**:
-  - **Athlete_ID**: Integer, unique identifier for each athlete.
-  - **Name**: String, name of the athlete.
-  - **Country**: String, country of the athlete.
+  - **PersonName**: string (nullable)
+  - **Country**: string (nullable)
+  - **Discipline**: string (nullable)
 
 ### Dataset: `Coaches`
 - **Description**: Represents the dataset containing information about Olympic coaches.
 - **Schema**:
-  - **Coach_ID**: Integer, unique identifier for each coach.
-  - **Name**: String, name of the coach.
-  - **Country**: String, country of the coach.
-  - **Discipline**: String, discipline the coach is associated with.
+  - **Name**: string (nullable)
+  - **Country**: string (nullable)
+  - **Discipline**: string (nullable)
+  - **Event**: string (nullable)
 
 ### Dataset: `EntriesGender`
 - **Description**: Contains gender distribution of athletes across disciplines.
 - **Schema**:
-  - **Discipline**: String, the discipline.
-  - **Female**: Integer, number of female athletes.
-  - **Male**: Integer, number of male athletes.
-  - **Total**: Integer, total number of athletes.
+  - **Discipline**: string (nullable)
+  - **Female**: integer (nullable)
+  - **Male**: integer (nullable)
+  - **Total**: integer (nullable)
 
 ### Dataset: `Medals`
 - **Description**: Contains medal counts for each country.
 - **Schema**:
-  - **Rank**: Integer, rank of the country based on medal count.
-  - **TeamCountry**: String, the country.
-  - **Gold**: Integer, number of gold medals.
-  - **Silver**: Integer, number of silver medals.
-  - **Bronze**: Integer, number of bronze medals.
-  - **Total**: Integer, total number of medals.
+  - **Rank**: integer (nullable)
+  - **TeamCountry**: string (nullable)
+  - **Gold**: integer (nullable)
+  - **Silver**: integer (nullable)
+  - **Bronze**: integer (nullable)
+  - **Total**: integer (nullable)
+  - **Rank by Total**: integer (nullable)
 
 ### Dataset: `Teams`
 - **Description**: Contains information about teams participating in the Olympics.
 - **Schema**:
-  - **TeamName**: String, name of the team.
-  - **Discipline**: String, the discipline.
-  - **Country**: String, the country.
-  - **Event**: String, the event.
+  - **TeamName**: string (nullable)
+  - **Discipline**: string (nullable)
+  - **Country**: string (nullable)
+  - **Event**: string (nullable)
 
 ## Triggers
 - **Trigger Name**: None

@@ -17,6 +17,10 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
    - Azure Synapse Analytics
 4. Microsoft Power BI (data visualisation tool)
 
+## Dataset Used
+A public Github repository with [.Csv](https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/tree/main/data) files originally sourced from [Kaggle](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo).
+
+
 ## Folder Structure
 
 - **[/ADF/](https://github.com/HannibalGh/Azure-DE-Project-Tokyo-Olympic-Data-Analytics/tree/main/ADF)**: Contains Azure Data Factory (ADF) configuration files.
@@ -37,10 +41,11 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
   - **Power_BI_Documentation.md**: Documentation for Power BI, including report layout, visuals, and instructions on how to open the report.
 
 ******
-# Additional Information on Technologies Used
+# Steps in the ETL + Visualisation process
 ******
 
-## Azure Data Factory (ADF)
+## 1. Azure Data Factory (ADF) 
+The Data Factory extracts data from Data Source
 
 - **Data Factory Name**: `tokyo-olympic-han`
 - **Pipeline**: `Load_Olympic_Data`
@@ -52,7 +57,7 @@ This project analyzes Tokyo Olympics 2020 data using Azure services and Power BI
 
 ******
 
-## Azure Data Lake
+## 2. Azure Data Lake
 
 The Data Lake component stores raw and processed data used for analytics. Key folder:
 
@@ -61,20 +66,23 @@ The Data Lake component stores raw and processed data used for analytics. Key fo
 
 ******
 
-## Databricks
+## 3. Databricks
 
 The Databricks component is used for advanced data processing and transformation. Details of the Databricks setup and any related notebooks will be provided in the Databricks folder.
 
 ******
 
-## Azure Synapse Analytics
+## 4. Azure Synapse Analytics
+
+Synapse Analytics is used to create a Database and run desired SQL queries on the data
 
 - **Data Source**: The report uses the Synapse Data Lake database named `TokyoOlympicsDB` for data. This database was used to import and analyze data in Power BI.
 - **Scripts/Queries**: SQL query files used for data analysis are stored in the Synapse_Analytics/Scripts/Queries folder.
 
 ******
 
-## Microsoft Power BI
+## 5. Microsoft Power BI
+Power BI creates dashboards based on the SQL queries created in Synapse Analytics
 
 - **Dashboard**: The project includes a single Power BI dashboard report.
 - **Visuals**: 
@@ -92,6 +100,8 @@ To view the report:
 2. **Open Power BI Desktop**: Launch Power BI Desktop on your computer.
 3. **Open the File**: In Power BI, go to **File > Open** and select the downloaded `.pbix` file.
 4. **Interact with the Report**: Once the file is opened, you can interact with the visuals and analyze the data.
+
+******
 
 ## Conclusion
 
